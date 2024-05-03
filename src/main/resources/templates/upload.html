@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Upload Video for Face Recognition</title>
+</head>
+<body>
+<h1>Upload Video for Face Recognition</h1>
+<form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <button type="submit">Upload and Analyze</button>
+</form>
+<p th:text="${message}"></p>
+</body>
+</html>
